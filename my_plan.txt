@@ -1,0 +1,54 @@
+Labb2 Project plan :
+
+1- Skapa ett GitHub-repo
+
+2- Spara Terraform-konfigurationen i ditt GitHub-repo
+
+3- Utveckla Webbapplikation eller API
+
+4- Publicering med Visual Studio och GitHub
+
+5- Utveckla och testa i molnet:
+
+
+
+
+
+
+---------------------
+
+1- Resource group: 
+                (Location :<decide based on users of this app> W.E
+                , name: <client_name> )
+                status : (Not stated , started, done)
+                developer : David.
+
+2- VNet : 
+        (Subnets : Subnet for webapp & subnet to MsSql server,
+        IP_addresses = [10.0.0.0/16] , [10.0.1.0/24] , [10.0.2.0/24],
+        Optional : NSG,
+        )
+        status : done
+        developer :
+
+3- Azure KeyVault: (save MSSQL server password for admin accout)
+
+4- Azure Windows Web app with 2 extra slots:
+                                            (slot1 = stage,
+                                            slot2: Last good,
+                                            Connect to webapp subnet into VNet,
+                                            configure logs to Log_analytics. )
+                                            status: 
+                                            developer:
+
+5- MsSql Database server and MsMQl Database:
+                                            (server setup,
+                                            database setup,
+                                            Connect to MsSql subnet into VNet,
+                                            configure logs to Log_analytics)
+                                            status:
+                                            developer:
+
+6- Log_analytics workspace: (to collect logs from active Resource )
+7- Azure Monitor that 
+8- Azure DNS Zone ()                                    
